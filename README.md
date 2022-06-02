@@ -15,6 +15,10 @@ Installation
 pip install -r requirements.txt
 ```
 
+2. Since, model file is not uploaded in this repo due to large file size,thus you need to train the model first
+```
+python train.py -d <path to dataset>
+```
 2. Run app.py
 ```
 streamlit run app.py
