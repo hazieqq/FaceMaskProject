@@ -1,0 +1,17 @@
+/* Changing body color to dark grey and text color to gainsboro(version of white) */
+
+body {
+    color: gainsboro;
+    background-color: #333;
+}
+
+
+/* Removing Main Menubar and Footer */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
