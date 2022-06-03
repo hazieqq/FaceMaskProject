@@ -104,8 +104,7 @@ print("[INFO] evaluating network...")
 predIdxs = model.predict(testX, batch_size=BS)
 
 predIdxs = np.argmax(predIdxs, axis=1)
-
-print(classification_report(testY.argmax(axis=1), predIdxs,target_names=lb.classes_))
+print(classification_report(testY.argmax(axis=1), predIdxs,target_names=onehot.classes_))
 
 print("[INFO] saving mask detector model...")
 model.save(args["model"], save_format="h5")
